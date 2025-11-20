@@ -41,12 +41,12 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center gap-6 lg:gap-8">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`font-medium transition-colors ${
+              className={`font-medium transition-colors whitespace-nowrap ${
                 isScrolled
                   ? 'text-[#333333] hover:text-[#FF5722]'
                   : 'text-white hover:text-[#FF5722]'
